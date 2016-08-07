@@ -1,0 +1,28 @@
+{
+  "name": "holodoc",
+  "version": "1.0.0",
+  "description": "Slack bot Integration with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmundt/holodoc.git"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "node"
+  ],
+  "author": "Thomas Mundt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmundt/holodoc/issues"
+  },
+  "homepage": "https://github.com/tmundt/holodoc#readme",
+  "dependencies": {
+    "slackbots": "^0.5.1",
+    "sqlite3": "^3.1.4"
+  }
+}
