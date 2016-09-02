@@ -26,7 +26,7 @@ console.log('index.js: name: ' + name);
 
 var docbot = new DocBot({
     token: token,
-    dbPath: dbPath,
+    //dbPath: dbPath,
     name: name
 });
 
