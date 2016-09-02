@@ -8,7 +8,7 @@
  * @author Luciano Mammino <lucianomammino@gmail.com>
  */
 
-var NorrisBot = require('../lib/DocBot');
+var DocBot = require('./lib/DocBot');
 
 /**
  * Environment variables used to configure the bot:
@@ -18,9 +18,11 @@ var NorrisBot = require('../lib/DocBot');
  *  BOT_DB_PATH: the path of the SQLite database used by the bot
  *  BOT_NAME: the username you want to give to the bot within your organisation.
  */
-var token = process.env.BOT_API_KEY || require('../token');
-var dbPath = process.env.BOT_DB_PATH;
-var name = process.env.BOT_NAME;
+var token = process.env.BOT_API_KEY || require('./token');
+var dbPath = process.env.BOT_DB_PATH ||'some/path';
+var name = process.env.BOT_NAME||'holodoc';
+
+console.log('index.js: name: ' + name);
 
 var docbot = new DocBot({
     token: token,
