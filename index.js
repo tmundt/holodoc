@@ -3,9 +3,10 @@
 'use strict';
 
 /**
- * NorrisBot launcher script.
+ * DocBot launch
  *
- * @author Luciano Mammino <lucianomammino@gmail.com>
+ * @author: Thomas Mundt
+ * original idea by Luciano Mammino <lucianomammino@gmail.com>
  */
 
 var DocBot = require('./lib/DocBot');
@@ -19,7 +20,7 @@ var DocBot = require('./lib/DocBot');
  *  BOT_NAME: the username you want to give to the bot within your organisation.
  */
 var token = process.env.BOT_API_KEY || require('./token');
-var dbPath = process.env.BOT_DB_PATH ||'some/path';
+//var dbPath = process.env.BOT_DB_PATH ||'some/path';
 var name = process.env.BOT_NAME||'holodoc';
 
 console.log('index.js: name: ' + name);
