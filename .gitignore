@@ -26,14 +26,14 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
+# Dependency directories NodeJS
 node_modules
 jspm_packages
 
-# Optional npm cache directory
+# Optional npm cache directory NodeJS
 .npm
 
-# Optional REPL history
+# Optional REPL history NodeJS
 .node_repl_history
 
 # ignore bot token file
@@ -71,6 +71,7 @@ token.js
 
 # IntelliJ
 /out/
+*.iml
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
