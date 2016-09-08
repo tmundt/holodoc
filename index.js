@@ -10,6 +10,7 @@
  */
 
 var DocBot = require('./lib/DocBot');
+var request = require('request');
 
 /**
  * Environment variables used to configure the bot:
@@ -31,4 +32,8 @@ var docbot = new DocBot({
     name: name
 });
 
+// test request to coresystems
+// request.get('https://ds.coresuite.com/ds/api/directory/v1/accounts/qt-core-muth', function(error, response, body) {
+	
+// });
 docbot.run();
