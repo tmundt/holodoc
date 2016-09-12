@@ -33,7 +33,16 @@ var docbot = new DocBot({
 });
 
 // test request to coresystems
-// request.get('https://ds.coresuite.com/ds/api/directory/v1/accounts/qt-core-muth', function(error, response, body) {
-	
-// });
+request.get('https://ds.coresuite.com/ds/api/directory/v1/accounts/qt-core-muth', function(error, response, body) {
+	console.log('Requesting coresystems');
+	if(error) {
+		return console.error('An error occured: ' + error);
+	}
+
+	console.log('Response from coresystems:');
+	if(response.statusCode != 200) {
+		console.warn('Status Code is: ' + status.code);
+	}
+	console.log(body);
+});
 docbot.run();

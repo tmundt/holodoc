@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/tmundt/holodoc#readme",
   "dependencies": {
+    "https": "^1.0.0",
+    "q": "^1.4.1",
     "request": "^2.74.0",
+    "request-promise": "^4.1.1",
     "slackbots": "^0.5.1",
     "sqlite3": "^3.1.4"
   }
