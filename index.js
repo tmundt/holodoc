@@ -20,7 +20,8 @@ var request = require('request');
  *  BOT_DB_PATH: the path of the SQLite database used by the bot
  *  BOT_NAME: the username you want to give to the bot within your organisation.
  */
-var token = process.env.BOT_API_KEY || require('./config').token.docBot;
+var token = process.env.BOT_API_KEY || require('./config').token.enterprise.docBot;
+//var token = process.env.BOT_API_KEY || require('./config').token.coresystemsteam.docBot;
 //var dbPath = process.env.BOT_DB_PATH ||'some/path';
 var name = process.env.BOT_NAME||require('./config').name.docBot||'holodoc';
 
