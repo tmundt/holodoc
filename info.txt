@@ -1,0 +1,9 @@
+# To start the app on Heroku, use:
+heroku restart -a holodoc
+# Then stop standard web dyno and start worker dyno
+heroku ps:scale web=0 -a holodoc
+heroku ps:scale worker=1 -a holodoc
+
+# To stop the app on Heroku:
+heroku ps:scale web=0 --app holodoc
+heroku ps:scale worker=0 --app holodoc
