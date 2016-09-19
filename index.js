@@ -21,13 +21,13 @@ var request = require('request');
  *  BOT_NAME: the username you want to give to the bot within your organisation.
  */
 //var token = process.env.BOT_API_KEY || require('./config').token.enterprise.docBot;
-var token = process.env.BOT_API_KEY || require('./config').token.coresystemsteam.docBot;
+//var token = process.env.BOT_API_KEY || require('./config').token.coresystemsteam.docBot;
 //var dbPath = process.env.BOT_DB_PATH ||'some/path';
-var name = process.env.BOT_NAME||require('./config').name.docBot||'holodoc';
+//var name = process.env.BOT_NAME||require('./config').name.docBot||'holodoc';
 //
 // token and api keys for deployment with heroku
-//var token = process.env.BOT_API_KEY;
-//var name = process.env.BOT_NAME||'holodoc';
+var token = process.env.BOT_API_KEY;
+var name = process.env.BOT_NAME||'holodoc';
 
 
 
