@@ -4,13 +4,10 @@
   "description": "Slack bot Integration with NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "engines": {
     "node": "6.5.0"
-  },
-  "scripts": {
-    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +29,7 @@
     "q": "^1.4.1",
     "request": "^2.74.0",
     "request-promise": "^4.1.1",
-    "slackbots": "^0.5.2",
+    "slackbots": "^0.5.3",
     "sqlite3": "^3.1.4"
   }
 }
